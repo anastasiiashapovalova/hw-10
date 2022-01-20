@@ -30,10 +30,41 @@ body {
     background-color: #d40c45;
 }
 
+.second-line {
+    padding-bottom: 20px;
+    padding-top: 25px;
+}
+
 .nav-item {
     display: inline-block;
     vertical-align: top;
     margin-right: 30px;
+}
+
+.submenu-item {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 40px;
+}
+
+.submenu:last-child {
+    margin-right: 0px;
+}
+
+.menu {
+    padding-bottom: 25px;
+    padding-top: 29px;
+    border-top: 1px solid #EFEFEF
+}
+
+.submenu-item-link {
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+}
+
+.submenu-list {
+    text-align: center;
 }
 
 .nav-item:last-child {
@@ -48,8 +79,8 @@ body {
     background-image: url(images/rectangle-2.png);
     background-position: center;
     background-size: cover;
-    padding-top: 192px;
-    padding-bottom: 193px;
+    padding-top: 187px;/* должно быть 192px, несостыковки с макетом*/
+    padding-bottom: 188px;/* должно быть 193px, несостыковки с макетом*/
 }
 
 .title {
@@ -57,7 +88,7 @@ body {
     font-size: 48px;
     line-height: 56px;
     color: #FFFFFF;
-    margin-bottom: 50px;
+    margin-bottom: 45px; /* должно быть 50px, несостыковки с макетом*/
 }
 
 .text {
@@ -65,7 +96,7 @@ body {
     line-height: 20px;
     color: #FFFFFF;
     width: 308px;
-    margin-bottom: 50px;
+    margin-bottom: 45px; /* должно быть 50px, несостыковки с макетом*/
 }
 
 .button {
@@ -91,6 +122,18 @@ body {
 .card {
     display: inline-block;
     vertical-align: top;
+    background-color: #FFFFFF;
+    padding-top: 25px;
+    margin-right: 30px;
+    padding-bottom: 25px;
+}
+
+.cards {
+    margin-bottom: 100px;
+}
+
+.cards.cards-bgs {
+    margin-bottom: 0px;
 }
 
 .card-text {
@@ -121,14 +164,6 @@ body {
     margin-bottom: 20px;
 }
 
-.card {
-    background-color: #FFFFFF;
-    padding-top: 25px;
-    margin-right: 30px;
-    padding-bottom: 25px;
-    margin-bottom: 100px;
-}
-
 .card:last-child {
     margin-right: 0px;
 }
@@ -137,11 +172,52 @@ body {
     display: block;
     margin: 0px 40px 0px 39px;
     text-align: center;
-}
-
-.card-button.button {
     border-radius: 30px;
     border: 0px;
+}
+
+.button.button-call-back {
+    background-color: #FFFFFF;
+    border: 2px solid #F13C6E;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+    padding: 11px 26px 10px 27px; /*padding-top,padding-button - border 2px */
+    float: right;
+    margin-top: 20px;/* .button.button-call-back {margin-top: 45px} - .second-line {padding-top: 25px;} = 20px*/
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+}
+
+.button-call-back:hover {
+    background-color: #faf6f6;
+}
+
+.button.more {
+    padding: 11px 53px 12px 53px; /* уменьшила padding-top,padding-button на толщину border 2px.
+    left 26px и right 27px увеличила, на макете визуально выглядят больше */
+}
+
+.link.phone-number {
+    display: block;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    float: left;
+    margin-right: 40px;
+    margin-top: 30px;/* .link.phone-number {margin-top: 55px} - .second-line {padding-top: 25px;} = 30px*/
+}
+
+.inner {
+    float: right;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.second-line-logo {
+    float: left;
 }
 
 .card-title {
@@ -156,6 +232,9 @@ body {
     background-color: #F13C6E;
     display: inline-block;
     vertical-align: top;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    margin-right: 30px;
 }
 
 .subscribes {
@@ -165,6 +244,11 @@ body {
 .subscribe-img {
     display: inline-block;
     vertical-align: top;
+    margin: 56px 45px 56px 0px;
+}
+
+.subscribe-img.envelope {
+    margin: 36px 55px 36px 0px;
 }
 
 .subscribe-block {
@@ -172,40 +256,39 @@ body {
     vertical-align: top;
 }
 
-.subscribe {
-    margin-right: 30px;
-}
-
-.subscribe-text {
-    width: 231px;
-}
-
 .subscribe-title {
+    display: block;
     font-weight: 700;
     font-size: 18px;
     line-height: 21px;
     color: #FFFFFF;
+    margin-left: 40px;
 }
 
 .subscribe-text {
+    display: block;
+    width: 231px;
     font-size: 14px;
     line-height: 20px;
     color: #FFFFFF;
+    margin-left: 40px;
 }
 
 .brands-logo-impuls {
     display: inline-block;
     vertical-align: top;
-    border: 1px solid #EFEFEF;     
+    width: 25%;
+    border: 1px solid #EFEFEF;
 }
 
-.brands-logo-img {
+.brands-logo-impuls-link {
     display: block;
-    margin: 35px 67px 35px 60px;
+    padding: 35px 67px 35px 61px;
 }
 
 .brands-logo {
     background-color: #FFFFFF;
+    margin-bottom: 85px;
 }
 
 .category-title {
@@ -215,18 +298,73 @@ body {
     color: #000000;
 }
 
-.category-list-link {
+.category-list {
+    display: block;
+    margin-top: 25px;
+}
+
+.category-list-link {  
     font-size: 12px;
     line-height: 28px;
-    color: #828282;
+    color: #828282;    
 }
 
 .category-card {
     display: inline-block;
     vertical-align: top;
+    width: 100%;
+    max-width: 255px;
+    margin-right: 30px;
 }
 
-.penultimate-img {
+.category-cards {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    border-bottom: 1px solid #EFEFEF;
+}
+
+.category-card:last-child {
+    margin-right: 0px;
+}
+
+.category-title {
+    display: block;
+    border-bottom: 1px solid #EFEFEF;
+    padding-bottom: 30px;
+}
+
+.socials-icons-list-link {
+    display: block
+    
+}
+
+.socials-img {
     display: inline-block;
     vertical-align: top;
+    float: left;
+}
+
+.footer-text-copyright {
+    font-size: 12px;
+    line-height: 14px;
+    color: #828282;
+    display: block;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.footer {
+    background-color:#EFEFEF;
+}
+
+.footer-text-copyright.first {
+    float: left;
+}
+
+.footer-text-copyright.second {
+    float: right;
+}
+
+.clearfix {
+    clear: both;
 }
