@@ -103,7 +103,7 @@ body {
     background-color: #F13C6E;
     display: inline-block;
     vertical-align: top;
-    padding: 12px 26px 13px 27px;
+    padding: 9px 26px 8px 27px;
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.05em;
@@ -111,6 +111,11 @@ body {
     text-decoration: none;
     border: 2px solid #FFFFFF;
     border-radius: 40px;
+}
+
+.button.more-maps {
+    margin-left: 40px;
+    padding: 8px 22px 7px 21px;
 }
 
 .bgs {
@@ -142,7 +147,7 @@ body {
     text-align: center;
     color: #333333;
     width: 195px;
-    margin-bottom: 20px;
+    margin-bottom: 13px;
     margin-left: 30px;
     margin-right: 30px;
 }
@@ -154,7 +159,7 @@ body {
     text-align: center;
     letter-spacing: 0.05em;
     color: #000000;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
 }
 
 .card-img {
@@ -170,7 +175,7 @@ body {
 
 .card-button {
     display: block;
-    margin: 0px 40px 0px 39px;
+    margin: 0px 63px 0px 62px;
     text-align: center;
     border-radius: 30px;
     border: 0px;
@@ -182,9 +187,8 @@ body {
     font-size: 14px;
     line-height: 16px;
     color: #000000;
-    padding: 11px 26px 10px 27px; /*padding-top,padding-button - border 2px */
+    padding: 10px 19px 10px 20px;
     float: right;
-    margin-top: 20px;/* .button.button-call-back {margin-top: 45px} - .second-line {padding-top: 25px;} = 20px*/
     cursor: pointer;
     font-family: 'Roboto', sans-serif;
 }
@@ -194,7 +198,7 @@ body {
 }
 
 .button.more {
-    padding: 11px 53px 12px 53px; /* уменьшила padding-top,padding-button на толщину border 2px.
+    padding: 10px 44px 10px 43px; /* уменьшила padding-top,padding-button на толщину border 2px.
     left 26px и right 27px увеличила, на макете визуально выглядят больше */
 }
 
@@ -205,10 +209,11 @@ body {
     color: #000000;
     float: left;
     margin-right: 40px;
-    margin-top: 30px;/* .link.phone-number {margin-top: 55px} - .second-line {padding-top: 25px;} = 30px*/
+    margin-top: 12px;
 }
 
 .inner {
+    display: block;
     float: right;
 }
 
@@ -217,6 +222,7 @@ body {
 }
 
 .second-line-logo {
+    display: block;
     float: left;
 }
 
@@ -230,30 +236,34 @@ body {
 }
 .subscribe {
     background-color: #F13C6E;
+    width: 540px;
     display: inline-block;
     vertical-align: top;
     padding-top: 35px;
-    padding-bottom: 35px;
     margin-right: 30px;
+}
+
+.subscribe.second {
+    margin-right: 0px;
 }
 
 .subscribes {
     margin-bottom: 99px;
 }
 
-.subscribe-img {
-    display: inline-block;
-    vertical-align: top;
-    margin: 56px 45px 56px 0px;
-}
-
-.subscribe-img.envelope {
-    margin: 36px 55px 36px 0px;
-}
-
 .subscribe-block {
     display: inline-block;
     vertical-align: top;
+    padding-bottom: 31px;
+    margin-right: 65px;
+}
+
+.subscribe-img.picture {
+    margin-top: 23px;
+}
+
+.subscribe-block.first {
+    margin-right: 65px;
 }
 
 .subscribe-title {
@@ -263,6 +273,7 @@ body {
     line-height: 21px;
     color: #FFFFFF;
     margin-left: 40px;
+    margin-bottom: 25px;
 }
 
 .subscribe-text {
@@ -272,6 +283,7 @@ body {
     line-height: 20px;
     color: #FFFFFF;
     margin-left: 40px;
+    margin-bottom: 25px;
 }
 
 .brands-logo-impuls {
@@ -335,13 +347,17 @@ body {
 
 .socials-icons-list-link {
     display: block
-    
 }
 
 .socials-img {
-    display: inline-block;
-    vertical-align: top;
+    display: block;
     float: left;
+    margin-right: 20px;
+}
+
+.socials {
+    padding-top: 37px;
+    padding-bottom: 38px;
 }
 
 .footer-text-copyright {
@@ -367,4 +383,16 @@ body {
 
 .clearfix {
     clear: both;
+}
+
+.login {
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #C4C4C4;
+    background: #FFFFFF;
+    border: 0px;
+    border-radius: 30px;
+    margin-left: 40px;
+    padding: 10px 20px 9px 25px;
 }
